@@ -7,17 +7,17 @@ import ResizeComponent from './components/ResizeComponent';
 import MultiEffectComponent from './components/MultiEffectComponent';
 
 function App() {
-  // const [count, setCount] = useState(0);
-  // const [total, setTotal] = useState(0);
+  const [count, setCount] = useState(0);
+  const [total, setTotal] = useState(0);
 
  // first-> side effect function
  // second-> clean-up function
  // third-> comma separated dependence list
 
   // Variation 1 (runs on every render)
-  // useEffect(() => {
-  //   alert("I will run on each render.")
-  // })
+  useEffect(() => {
+    alert("I will run on each render.")
+  })
 
   // Variation 2 (runs on only first render)
   // useEffect(() => {
@@ -58,17 +58,17 @@ function App() {
   return (
     <div>
 
-      {/* <MultiEffectComponent/> */}
+      <MultiEffectComponent/>
 
       <ResizeComponent/>
 
-      {/* <DataFetcher/> */}
+      <DataFetcher/>
 
-      {/* <TimerComponent/> */}
+      <TimerComponent/>
 
-      {/* <LoggerComponent/> */}
+      <LoggerComponent/>
 
-      {/* <button onClick={handleClick}>
+      <button onClick={handleClick}>
         Update Count
       </button>
       <br/>
@@ -78,8 +78,8 @@ function App() {
       <button onClick={handleCLickTotal}>
         Update Total
       </button>
-      <br/>
-      Total is: {total} */}
+      <br/> 
+      Total is: {total}
     </div>
     
   )
