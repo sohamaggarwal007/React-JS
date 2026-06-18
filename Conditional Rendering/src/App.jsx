@@ -5,7 +5,7 @@ import Logout from './components/Logout'
 
 function App() {
 
-  const [isLoggedIn, setLoggedIn] = useState(true);
+  const [isLoggedIn] = useState(true);
 
   if(!isLoggedIn) {
     return (
