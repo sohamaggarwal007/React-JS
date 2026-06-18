@@ -25,20 +25,20 @@ function App() {
 
       <button onClick={() => alert("Button clicked")}>
         Click me
-      </button>
+      </button> 
 
-      {/* <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input type='text' onChange={handleInputChange}/>
         <button type='submit'>Submit</button>
-      </form> */}
+      </form>
 
-      {/* <p onMouseOver={handleMouseOver} style={{border: "1px solid black"}}>
+      <p onMouseOver={handleMouseOver} style={{border: "1px solid black"}}>
         I am a Para
       </p>
 
       <button onClick={handleClick}>
         Click me
-      </button> */}
+      </button> 
     </div>
   )
 }
