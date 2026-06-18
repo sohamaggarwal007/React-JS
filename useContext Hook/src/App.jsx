@@ -11,7 +11,7 @@ const UserContext = createContext();
 const themeContext = createContext();
 
 function App() {
-  const [user, setUser] = useState({name:"Soham"})
+  const [user] = useState({name:"Soham"})
   const [theme, setTheme] = useState('light');
 
   return (
@@ -26,4 +26,4 @@ function App() {
 }
 
 export default App
-export {UserContext, themeContext}
+export {UserContext}

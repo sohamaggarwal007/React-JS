@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import { themeContext, UserContext } from '../App' 
 
 const ChildC = () => {
