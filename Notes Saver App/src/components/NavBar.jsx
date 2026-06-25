@@ -2,15 +2,21 @@ import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <div className='flex flex-row gap-10 justify-center pt-8 pb-1'>
-      <NavLink to="/">
+    <nav className='w-full bg-[#1a1b26] p-4 flex justify-center gap-10 text-white font-semibold'>
+      <NavLink 
+        to="/" 
+        className={({isActive}) => isActive ? "text-blue-500" : "text-white hover:text-gray-300"}
+      >
         Home
       </NavLink>
 
-      <NavLink to="/pastes">
-        Pastes
+      <NavLink 
+        to="/pastes" 
+        className={({isActive}) => isActive ? "text-blue-500" : "text-white hover:text-gray-300"}
+      >
+        Paste
       </NavLink>
-    </div>
+    </nav>
   )
 }
 
