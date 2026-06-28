@@ -17,17 +17,19 @@ function App() {
     <div>
       <h1>Welcome everyone to my Web Dev Journey</h1>
       <div>
-        {isLoggedIn && <Logout/>}
+        {isLoggedIn && <Logout/>} {/* Logical AND used */}
       </div>
     </div>
   )
 
+  // Ternary Operators
   // return (
   //   <div>
   //     {isLoggedIn ? <Logout/> : <Login/>}
   //   </div>
   // )
 
+  // Simple If-Else Statement
   // if(isLoggedIn) {
   //   return (
   //     <Logout/>
