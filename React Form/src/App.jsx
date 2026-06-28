@@ -6,7 +6,6 @@ function App() {
   const {
     register, 
     handleSubmit,
-    watch,
     formState: { errors, isSubmitting },
   } = useForm();
 
@@ -29,7 +28,9 @@ function App() {
         { required: true, minLength: {value: 3, message:'Please enter atleast 3 charecters!'}})} />
         {errors.firstName && <p className='error-msg'>{errors.firstName.message}</p>}
       </div>
+      
       <br/>
+
       <div>
         <label>Middle Name: </label>
         <input
@@ -38,7 +39,9 @@ function App() {
         { required: true, minLength: {value: 3, message:'Please enter atleast 3 charecters!'}})} />
         {errors.middleName && <p className='error-msg'>{errors.middleName.message}</p>}
       </div>
+      
       <br/>
+      
       <div>
         <label>Last Name: </label>
         <input
@@ -48,9 +51,13 @@ function App() {
         pattern: {value: /[a-zA-Z]+/, message:'Please enter only alphabets!'} })} />
         {errors.lastName && <p className='error-msg'>{errors.lastName.message}</p>}
       </div>
+      
       <br/>
+      
       <input type="submit" disabled={isSubmitting} 
-      value={isSubmitting ? "Submitting..." : "Submit"}/>
+      value={isSubmitting ? "Submitting..." : "Submit"}
+      />
+      
     </form>
   )
 }

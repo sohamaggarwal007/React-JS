@@ -5,5 +5,8 @@ import App from './App.jsx'
 import Navbar from './componenets/Navbar.jsx'
 
 createRoot(document.getElementById('root')).render(
-    <Navbar />
+    <StrictMode>
+        <App/>
+        <Navbar/>
+    </StrictMode>
 )

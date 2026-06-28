@@ -16,7 +16,7 @@ function App() {
         <h1>{count}</h1>
       </Button>
 
-      {/* <Card name="Soham Aggarwal">
+      <Card name="Soham Aggarwal">
         <h1>Best WEB DEV Course</h1>
         <p>Trying to be consistent</p>
         <p>Will complete the course soon...</p>
@@ -24,7 +24,7 @@ function App() {
 
       <Card children="I am a children">
         <p>Kaise ho saare</p> This children overwrites the above children 
-      </Card> */}
+      </Card>
 
     </div>
   )

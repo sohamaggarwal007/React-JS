@@ -12,7 +12,7 @@ function App() {
 
   function expensivetasks(num) {
     console.log("Inside Expensive Task");
-    for(let i=0; i<=1000000000; i++) 
+    for(let i=0; i<=1000000000; i++)
     return num*2;
   }
 
